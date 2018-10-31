@@ -1,0 +1,18 @@
+endpoints:
+    restart:
+        enabled: true
+    shutdowm:
+        enabled: true
+logging:
+    level:
+      ROOT: INFO
+      org.springframework.web: DEBUG
+      
+eureka:
+    client:
+        registerWhithEureka: false
+        serviceUrl:
+            defaultZone: http://localhost:1111/eureka
+            
+server:
+    port: 4444
